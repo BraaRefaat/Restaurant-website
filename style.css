@@ -1,0 +1,159 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cairo;
+}
+
+body{
+    background: #FFEBCD;
+}
+
+.container{
+    height: 80vh;
+    width: 75vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: #FFEBCD;
+    border-radius: 5px;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70,70,70,0.5);
+    overflow: hidden;
+}   
+
+.wrapper{
+    height: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.nav-bar{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo{
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.2);
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 4px;
+    /* transition: 0.4s; */
+}
+
+/* .logo img:hover{
+    transform: scale(1.5);
+} */
+
+.logo p{
+    color: #0B0B0B;
+    font-weight: 700;
+}
+
+.nav-items{
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-item1 , .nav-item2{
+    display: flex;  
+    z-index: 9999;
+}
+
+.nav-item1 li , .nav-item2 li{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-item1 li a , .nav-item2 li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #0B0B0B;
+    transition: 0.5s;
+}
+
+.nav-item1 li a:hover , .active{
+    background: #FFB84C;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #FFEBCD !important;
+}
+
+.nav-item2 li a:hover{
+    color: #FFEBCD;
+}
+
+.content{
+    height: 90%;
+    width: 100%;
+    margin: 80px;
+    position: relative;    
+}
+
+.content-text h1{
+    line-height: 35px;
+    letter-spacing: 1.5px;
+    color: #0B0B0B;
+    font-weight: 800;
+}
+
+.content-text p{
+    margin-top: 20px;
+    color: #2f2d2d;
+    font-weight: 600;
+}
+
+.content-text button{
+    height: 35px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: #FFB84C;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #FFEBCD;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.content-text button:hover{
+    background: #f8a21f;
+    transform: scale(1.2);
+}
+
+.burger{
+    height: 380px;
+    position: absolute;
+    left: 53%;
+    top: 16%;
+}
+
+.line{
+    position: absolute;
+    height: 600px;
+    right: -180px;
+    top: -150px;
+
+}
+
+
+
